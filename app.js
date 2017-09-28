@@ -5,7 +5,7 @@ const socket = require('socket.io');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.redirect('/sketch.html');
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 var server = app.listen(3001, () => {
