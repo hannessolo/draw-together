@@ -4,7 +4,7 @@ function setup(){
   createCanvas(640, 480);
   background(51);
 
-  socket = io.connect('http://hanneshertach.me/drawtogether');
+  socket = io.connect('http://hanneshertach.me:3001');
   socket.on('mouse', newDrawing);
 }
 
