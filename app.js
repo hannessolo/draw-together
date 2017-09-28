@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
   res.redirect('/sketch.html');
 });
 
-var server = app.listen(3000, () => {
-  console.log('Server on port 3000');
+var server = app.listen(3001, () => {
+  console.log('Server on port 3001');
 });
 
 const io = socket.listen(server);
